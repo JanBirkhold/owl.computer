@@ -45,9 +45,8 @@ export const site = {
 
 export const navLinks = [
   { href: "/", label: "Startseite" },
-  { href: "/dienstleistungen", label: "Dienstleistungen" },
-  { href: "/ueber-mich", label: "Über mich" },
-  { href: "/kontakt", label: "Kontakt" },
+  { href: "/service", label: "Dienstleistungen" },
+  { href: "/aboutus", label: "Über mich" },
 ] as const;
 
 export const heroHeadline = "Computer-Probleme? Ich helfe Ihnen — persönlich in OWL.";

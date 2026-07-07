@@ -45,7 +45,7 @@ export function HeroSection() {
         <div className="mt-10 sm:max-w-lg">
           <PhoneCallButton className="w-full bg-[#0b8036] text-white hover:bg-[#096b2d] sm:w-auto" />
           <p className="mt-4 text-base text-white/90">
-            Mo–Fr, 9–18 Uhr · {site.geo.areaServed.slice(0, 3).join(", ")} u. Umgebung
+            {site.geo.areaServed.slice(0, 3).join(", ")} u. Umgebung
           </p>
         </div>
       </div>

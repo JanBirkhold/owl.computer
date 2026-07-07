@@ -13,7 +13,7 @@ export const metadata: Metadata = createMetadata({
   title: "Dienstleistungen",
   description:
     "IT-Dienstleistungen von OWL Computer: OS-Installation, Virenschutz, Datenrettung, Kaufberatung, Netzwerk, Reparatur, Webentwicklung und Hosting ab 5 €/Monat. 50 €/Stunde in OWL.",
-  path: "/dienstleistungen",
+  path: "/service",
 });
 
 export default function DienstleistungenPage() {
@@ -22,10 +22,10 @@ export default function DienstleistungenPage() {
       <StructuredData
         data={breadcrumbJsonLd([
           { name: "Startseite", path: "/" },
-          { name: "Dienstleistungen", path: "/dienstleistungen" },
+          { name: "Dienstleistungen", path: "/service" },
         ])}
       />
-      <SiteHeader currentPath="/dienstleistungen" />
+      <SiteHeader currentPath="/service" />
       <main id="main-content">
         <section className="border-b bg-muted/30 py-12 sm:py-16">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">

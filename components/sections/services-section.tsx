@@ -87,7 +87,7 @@ export function ServicesSection({ showAll = false, compact = false }: ServicesSe
         {!showAll && (
           <div className="mt-10 text-center">
             <Link
-              href="/dienstleistungen"
+              href="/service"
               className={cn(
                 buttonVariants({ size: "lg" }),
                 "min-h-12 text-lg",

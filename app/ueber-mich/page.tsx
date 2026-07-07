@@ -14,7 +14,7 @@ export const metadata: Metadata = createMetadata({
   title: "Über mich",
   description:
     "Kasimir Eckhardt — Inhaber von OWL Computer. B.Sc. Wirtschaftsinformatik, Schwerpunkt Software Engineering. Persönlicher IT-Service in Ostwestfalen-Lippe.",
-  path: "/ueber-mich",
+  path: "/aboutus",
 });
 
 export default function UeberMichPage() {
@@ -23,10 +23,10 @@ export default function UeberMichPage() {
       <StructuredData
         data={breadcrumbJsonLd([
           { name: "Startseite", path: "/" },
-          { name: "Über mich", path: "/ueber-mich" },
+          { name: "Über mich", path: "/aboutus" },
         ])}
       />
-      <SiteHeader currentPath="/ueber-mich" />
+      <SiteHeader currentPath="/aboutus" />
       <main id="main-content">
         <section className="border-b bg-muted/30 py-12 sm:py-16">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -85,7 +85,7 @@ export default function UeberMichPage() {
 
               <p className="mt-8 text-sm text-muted-foreground">
                 Details zu meinen{" "}
-                <Link href="/dienstleistungen" className="text-[#0b8036] hover:underline">
+                <Link href="/service" className="text-[#0b8036] hover:underline">
                   Dienstleistungen
                 </Link>{" "}
                 finden Sie auf der Leistungsseite.

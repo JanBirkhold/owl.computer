@@ -29,14 +29,9 @@ export function ContactSection() {
           </span>
         </div>
 
-        <p className="mt-6 flex items-center justify-center gap-2 text-center text-lg text-muted-foreground">
-          <Phone className="size-5 shrink-0 text-[#0b8036]" aria-hidden="true" />
-          Mo–Fr, 9–18 Uhr
-        </p>
-
         <p className="mt-8 text-center text-lg text-muted-foreground">
           Einsatzgebiet: {site.geo.areaServed.join(", ")}.{" "}
-          <Link href="/dienstleistungen" className="content-link">
+          <Link href="/service" className="content-link">
             Alle Leistungen ansehen
           </Link>
         </p>
