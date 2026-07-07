@@ -16,7 +16,7 @@ export function CtaBanner() {
           Rufen Sie mich an — ich helfe Ihnen gerne weiter. Kein Fachchinesisch, keine
           Warteschleife.
         </p>
-        <PhoneCallButton className="mx-auto mt-8 bg-white text-[#0b8036] hover:bg-white/95" />
+        <PhoneCallButton className="mx-auto mt-8 hidden bg-white text-[#0b8036] hover:bg-white/95 md:flex" />
         <p className="mt-4 text-lg text-white/90">Mo–Fr, 9–18 Uhr</p>
       </div>
     </section>

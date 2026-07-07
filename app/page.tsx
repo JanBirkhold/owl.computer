@@ -4,7 +4,6 @@ import { ServicesSection } from "@/components/sections/services-section";
 import { DataRecoverySection } from "@/components/sections/data-recovery-section";
 import { TrustSection } from "@/components/sections/trust-section";
 import { PortfolioSection } from "@/components/sections/portfolio-section";
-import { ContactSection } from "@/components/sections/contact-section";
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export default function HomePage() {
@@ -18,7 +17,6 @@ export default function HomePage() {
         <TrustSection />
         <PortfolioSection />
         <CtaBanner />
-        <ContactSection />
       </main>
     </>
   );

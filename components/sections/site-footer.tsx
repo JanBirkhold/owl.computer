@@ -7,17 +7,7 @@ export function SiteFooter() {
   return (
     <footer className="mt-auto border-t-2 border-white/10 bg-[#0a0a0a] pb-24 text-white md:pb-0">
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <div className="rounded-2xl border-2 border-[#0b8036]/40 bg-[#0b8036]/10 p-6 text-center md:hidden">
-          <p className="text-lg font-semibold">Fragen? Rufen Sie an:</p>
-          <a
-            href={site.phoneHref}
-            className="mt-2 block text-3xl font-bold text-[#a2ce90] underline underline-offset-4"
-          >
-            {site.phone}
-          </a>
-        </div>
-
-        <div className="mt-8 grid gap-8 md:mt-0 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-3">
           <div>
             <p className="text-xl font-semibold text-white">{site.name}</p>
             <p className="mt-2 text-lg leading-relaxed text-white/90">{site.tagline}</p>

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
-import { PhoneCallButton } from "@/components/ui/phone-call-button";
 import { portfolioProjects } from "@/lib/site";
 
 export function PortfolioSection() {
@@ -62,12 +61,6 @@ export function PortfolioSection() {
           <p className="mt-2 text-lg text-muted-foreground">
             Ich erstelle moderne, schnelle Websites nach Ihren Wünschen — Festpreis nach Absprache.
           </p>
-          <div className="mt-6 flex justify-center">
-            <PhoneCallButton
-              label="Beratung anfragen:"
-              className="bg-[#0b8036] text-white hover:bg-[#096b2d]"
-            />
-          </div>
         </div>
       </div>
     </section>
