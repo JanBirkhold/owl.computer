@@ -100,7 +100,8 @@ export const services = [
     description:
       "Computer-Reparatur vor Ort oder im Service — z. B. SSD-Einbau, RAM-Upgrade, Defektanalyse und Datensicherung.",
     icon: "wrench" as const,
-    image: "/images/hardware.jpg",
+    image: "/images/repair.jpg",
+    imagePosition: "object-[center_78%]",
   },
   {
     id: "data-recovery",
@@ -267,9 +268,9 @@ export const imageCredits = [
     url: "https://www.pexels.com/photo/person-using-macbook-on-white-table-3861969/",
   },
   {
-    file: "hardware.jpg",
-    photographer: "Negative Space",
-    url: "https://www.pexels.com/photo/turned-on-laptop-computer-442150/",
+    file: "repair.jpg",
+    photographer: "cottonbro studio",
+    url: "https://www.pexels.com/photo/person-in-green-sweater-playing-audio-mixer-4705603/",
   },
   {
     file: "network.jpg",

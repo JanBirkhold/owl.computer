@@ -63,7 +63,10 @@ export function ServicesSection({ showAll = false, compact = false }: ServicesSe
                     alt=""
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover"
+                    className={cn(
+                      "object-cover",
+                      "imagePosition" in service && service.imagePosition,
+                    )}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                   <div className="absolute bottom-3 left-3 flex size-12 items-center justify-center rounded-xl bg-[#0b8036] text-white">
