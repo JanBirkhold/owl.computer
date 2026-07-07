@@ -293,16 +293,3 @@ export const imageCredits = [
     url: "https://www.pexels.com/photo/photo-of-people-near-wooden-table-3184292/",
   },
 ] as const;
-
-export const contactSubjects = [
-  "Allgemeine Anfrage",
-  "Computer-Reparatur",
-  "Datenrettung",
-  "Virus / Fehlerbehebung",
-  "Kaufberatung",
-  "Netzwerk / WLAN",
-  "Website-Erstellung",
-  "Webspace / Hosting",
-  "IT-Infrastruktur Unternehmen",
-  "Sonstiges",
-] as const;

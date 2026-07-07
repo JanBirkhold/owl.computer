@@ -145,18 +145,6 @@
 }
 
 @layer components {
-  .senior-form input,
-  .senior-form select,
-  .senior-form textarea {
-    @apply min-h-12 px-4 text-lg;
-  }
-  .senior-form label {
-    @apply text-lg font-semibold;
-  }
-  .senior-form [role="alert"],
-  .senior-form .field-error {
-    @apply text-base font-medium;
-  }
   .btn-call {
     @apply inline-flex min-h-14 items-center justify-center gap-3 rounded-xl px-8 text-xl font-bold;
   }
