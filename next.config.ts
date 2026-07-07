@@ -39,20 +39,11 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  async redirects() {
-    return [
-      { source: "/service", destination: "/dienstleistungen", permanent: true },
-      { source: "/service/", destination: "/dienstleistungen", permanent: true },
-      { source: "/aboutus", destination: "/ueber-mich", permanent: true },
-      { source: "/aboutus/", destination: "/ueber-mich", permanent: true },
-    ];
-  },
-  async headers() {
-    return [{ source: "/(.*)", headers: securityHeaders }];
-  },
   images: {
+    unoptimized: true,
     formats: ["image/avif", "image/webp"],
   },
+  output: "export",
 };
 
 export default nextConfig;
