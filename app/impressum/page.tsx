@@ -24,9 +24,7 @@ export default function ImpressumPage() {
             <span>Impressum</span>
           </nav>
 
-          <h1>Impressum</h1>
-
-          <h2>Angaben gemäß § 5 TMG</h2>
+          <h2>Angaben gemäß § 5 TMG und verantwortlich für den Inhalt</h2>
           <p>
             <strong>{site.name}</strong>
             <br />
@@ -35,32 +33,19 @@ export default function ImpressumPage() {
             {site.addresses.legal.street}
             <br />
             {site.addresses.legal.zip} {site.addresses.legal.city}
-          </p>
-
-          <h2>Kontakt</h2>
+          </p><br />
           <p>
-            Telefon: <a href={site.phoneHref}>{site.phone}</a>
+            <a href={site.phoneHref}>{site.phone}</a>
             <br />
-            E-Mail: <a href={`mailto:${site.emailOwner}`}>{site.emailOwner}</a>
-            <br />
-            Öffentliche Anfragen: <a href={`mailto:${site.email}`}>{site.email}</a>
-          </p>
+            <a href={`mailto:${site.email}`}>{site.email}</a>
+          </p><br />
 
-          <h2>Büroanschrift</h2>
+          <h2>Büro:</h2>
           <p>
             {site.addresses.office.street}
             <br />
             {site.addresses.office.zip} {site.addresses.office.city}
-          </p>
-
-          <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-          <p>
-            {site.owner}
-            <br />
-            {site.addresses.legal.street}
-            <br />
-            {site.addresses.legal.zip} {site.addresses.legal.city}
-          </p>
+          </p><br />
 
           <h2>EU-Streitschlichtung</h2>
           <p>
@@ -72,13 +57,12 @@ export default function ImpressumPage() {
               rel="noopener noreferrer"
             >
               https://ec.europa.eu/consumers/odr/
-            </a>
-            . Unsere E-Mail-Adresse finden Sie oben im Impressum.
-          </p>
+            </a>.
+          </p><br />
 
           <h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
           <p>
-            Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+            Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
             Verbraucherschlichtungsstelle teilzunehmen.
           </p>
         </article>
