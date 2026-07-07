@@ -1,12 +1,13 @@
 "use server";
 
 import { z } from "zod";
-import { sendContactMail } from "@/lib/mail";
+import { isSmtpConfigured, sendContactMail } from "@/lib/mail";
 import { site } from "@/lib/site";
 
 const contactSubjectValues = [
   "Allgemeine Anfrage",
   "Computer-Reparatur",
+  "Datenrettung",
   "Virus / Fehlerbehebung",
   "Kaufberatung",
   "Netzwerk / WLAN",
@@ -39,6 +40,7 @@ const contactSchema = z.object({
 export type ContactFormState = {
   success: boolean;
   message: string;
+  fallback?: boolean;
   fieldErrors?: Record<string, string[]>;
 };
 
@@ -78,6 +80,16 @@ Anliegen: ${subject}
 Nachricht:
 ${message}
 `.trim();
+
+  if (!isSmtpConfigured()) {
+    console.info("[contact-form:fallback]", emailBody);
+    return {
+      success: true,
+      fallback: true,
+      message:
+        "Vielen Dank für Ihre Nachricht! Der E-Mail-Versand ist gerade nicht aktiv — bitte rufen Sie mich direkt an.",
+    };
+  }
 
   try {
     await sendContactMail({

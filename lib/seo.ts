@@ -136,6 +136,7 @@ export function servicesJsonLd() {
       "Kaufberatung",
       "Netzwerkeinrichtung",
       "Computer-Reparatur",
+      "Datenrettung",
       "Website-Erstellung",
       "Webspace & Administration",
     ].map((name, index) => ({

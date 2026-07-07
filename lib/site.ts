@@ -103,6 +103,14 @@ export const services = [
     image: "/images/hardware.jpg",
   },
   {
+    id: "data-recovery",
+    title: "Datenrettung",
+    description:
+      "Wiederherstellung von Dateien von Festplatten, SSDs, USB-Sticks und SD-Karten — auch nach Absturz, Formatierung oder defekter Hardware.",
+    icon: "hard-drive" as const,
+    image: "/images/datenphoenix/datenphoenix-2.jpg",
+  },
+  {
     id: "webdev",
     title: "Website-Erstellung",
     description:
@@ -119,6 +127,57 @@ export const services = [
     image: "/images/hosting.jpg",
   },
 ] as const;
+
+export const datenphoenixFeatured = {
+  image: "/images/datenphoenix/datenphoenix-1.jpg",
+  alt: "Datenrettung — professionelle Wiederherstellung verlorener Dateien",
+  title: "Datenrettung",
+  caption:
+    "Ob privat oder geschäftlich — verlorene Dateien lassen sich oft wiederherstellen. Typische Fälle im Überblick:",
+} as const;
+
+export const datenphoenixGallery = [
+  {
+    id: "business",
+    image: "/images/datenphoenix/datenphoenix-1.jpg",
+    alt: "Datenrettung — verlorene Kundendatenbank wiederherstellen",
+    title: "Unternehmensdaten",
+    caption: "Kundendatenbank oder Firmendaten verloren? Professionelle Wiederherstellung für Unternehmen.",
+  },
+  {
+    id: "hdd",
+    image: "/images/datenphoenix/datenphoenix-2.jpg",
+    alt: "Datenrettung — Festplatte nach Sturz oder Defekt",
+    title: "Festplatten & SSDs",
+    caption: "Festplatte runtergefallen oder nicht mehr erkannt? Rettung von HDD und SSD.",
+  },
+  {
+    id: "photos",
+    image: "/images/datenphoenix/datenphoenix-3.jpg",
+    alt: "Datenrettung — verlorene Familienfotos und Erinnerungen",
+    title: "Fotos & Erinnerungen",
+    caption: "Gelöschte oder beschädigte Familienfotos — sensible Wiederherstellung Ihrer Erinnerungen.",
+  },
+  {
+    id: "sd-card",
+    image: "/images/datenphoenix/datenphoenix-4.jpg",
+    alt: "Datenrettung — defekte SD-Karte und Speicherkarten",
+    title: "SD-Karten & USB",
+    caption: "Probleme mit SD-Karten, USB-Sticks oder Speicherkarten? Schnelle und sichere Hilfe.",
+  },
+] as const;
+
+export const dataRecoveryIntro = {
+  headline: "Datenrettung — wenn wichtige Dateien verschwunden sind",
+  description:
+    "Ob Festplatte, SSD, SD-Karte oder USB-Stick: Ich helfe Ihnen, verlorene Daten wiederherzustellen — diskret, erfahren und mit professionellen Werkzeugen. Je nach Schadensfall vor Ort oder im Labor.",
+  highlights: [
+    "Festplatten, SSDs, USB & SD-Karten",
+    "Nach Löschung, Absturz oder Formatierung",
+    "Fotos, Dokumente & Firmendaten",
+    "Ehrliche Einschätzung vorab — keine leeren Versprechen",
+  ],
+} as const;
 
 export const competencies = [
   {
@@ -237,6 +296,7 @@ export const imageCredits = [
 export const contactSubjects = [
   "Allgemeine Anfrage",
   "Computer-Reparatur",
+  "Datenrettung",
   "Virus / Fehlerbehebung",
   "Kaufberatung",
   "Netzwerk / WLAN",

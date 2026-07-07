@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   Globe,
+  HardDrive,
   Monitor,
   Server,
   Shield,
@@ -21,6 +22,7 @@ const iconMap: Record<(typeof services)[number]["icon"], LucideIcon> = {
   "shopping-cart": ShoppingCart,
   wifi: Wifi,
   wrench: Wrench,
+  "hard-drive": HardDrive,
   globe: Globe,
   server: Server,
 };

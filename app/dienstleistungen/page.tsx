@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "@/components/sections/site-header";
 import { ServicesSection } from "@/components/sections/services-section";
+import { DataRecoverySection } from "@/components/sections/data-recovery-section";
 import { PortfolioSection } from "@/components/sections/portfolio-section";
 import { CtaBanner } from "@/components/sections/cta-banner";
 import { StructuredData } from "@/components/structured-data";
@@ -11,7 +12,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = createMetadata({
   title: "Dienstleistungen",
   description:
-    "IT-Dienstleistungen von OWL Computer: OS-Installation, Virenschutz, Kaufberatung, Netzwerk, Reparatur, Webentwicklung und Hosting ab 5 €/Monat. 50 €/Stunde in OWL.",
+    "IT-Dienstleistungen von OWL Computer: OS-Installation, Virenschutz, Datenrettung, Kaufberatung, Netzwerk, Reparatur, Webentwicklung und Hosting ab 5 €/Monat. 50 €/Stunde in OWL.",
   path: "/dienstleistungen",
 });
 
@@ -45,6 +46,8 @@ export default function DienstleistungenPage() {
         </section>
 
         <ServicesSection showAll compact />
+
+        <DataRecoverySection />
 
         <section className="py-16 sm:py-20" aria-labelledby="pricing-heading">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">

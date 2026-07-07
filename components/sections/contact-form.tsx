@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { cn } from "@/lib/utils";
 
 const initialState: ContactFormState = {
   success: false,
@@ -23,18 +24,37 @@ export function ContactForm({ id = "contact-form" }: ContactFormProps) {
   const [state, formAction, pending] = useActionState(submitContactForm, initialState);
 
   if (state.success) {
+    const isFallback = state.fallback === true;
+
     return (
       <div
         role="status"
-        className="rounded-2xl border-2 border-[#0b8036]/40 bg-[#0b8036]/5 p-8 text-center"
+        className={cn(
+          "rounded-2xl border-2 p-8 text-center",
+          isFallback
+            ? "border-orange-500 bg-orange-50"
+            : "border-[#0b8036]/40 bg-[#0b8036]/5",
+        )}
       >
-        <p className="text-xl font-semibold text-[#0b8036]">{state.message}</p>
+        <p
+          className={cn(
+            "text-xl font-semibold",
+            isFallback ? "text-orange-900" : "text-[#0b8036]",
+          )}
+        >
+          {state.message}
+        </p>
         <p className="mt-3 text-lg text-muted-foreground">
-          Bei dringenden Fragen rufen Sie mich direkt an:
+          {isFallback
+            ? "Am schnellsten erreichen Sie mich so:"
+            : "Bei dringenden Fragen rufen Sie mich direkt an:"}
         </p>
         <a
           href={site.phoneHref}
-          className="mt-4 inline-flex min-h-12 items-center gap-2 text-2xl font-bold text-[#0b8036] underline underline-offset-4"
+          className={cn(
+            "mt-4 inline-flex min-h-12 items-center gap-2 text-2xl font-bold underline underline-offset-4",
+            isFallback ? "text-orange-700 hover:text-orange-900" : "text-[#0b8036]",
+          )}
         >
           <Phone className="size-6" aria-hidden="true" />
           {site.phone}
