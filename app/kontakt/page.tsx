@@ -8,7 +8,7 @@ import { breadcrumbJsonLd, createMetadata } from "@/lib/seo";
 export const metadata: Metadata = createMetadata({
   title: "Kontakt",
   description:
-    "Kontaktieren Sie OWL Computer: Telefon 0176-34934106, info@owl.computer oder Kontaktformular. IT-Service in Barntrup, Dörentrup und OWL.",
+    "Kontaktieren Sie OWL Computer: Telefon 0176-34934106. IT-Service in Barntrup, Dörentrup und OWL.",
   path: "/kontakt",
 });
 
@@ -34,11 +34,11 @@ export default function KontaktPage() {
             </nav>
             <h1 className="text-4xl font-bold sm:text-5xl">Kontakt</h1>
             <p className="mt-4 max-w-2xl text-xl text-muted-foreground">
-              Am einfachsten erreichen Sie mich per Telefon unter{" "}
+              Rufen Sie mich an unter{" "}
               <a href="tel:+4917634934106" className="content-link font-bold">
                 0176-34934106
               </a>
-              . Alternativ nutzen Sie das Formular weiter unten.
+              . Erstgespräch unverbindlich — ich berate Sie gern.
             </p>
           </div>
         </section>

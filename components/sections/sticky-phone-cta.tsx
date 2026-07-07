@@ -12,11 +12,14 @@ export function StickyPhoneCta() {
     >
       <a
         href={site.phoneHref}
-        className="flex min-h-14 items-center justify-center gap-3 rounded-xl bg-white px-6 text-xl font-bold text-[#0b8036] transition-colors active:bg-white/90"
+        className="flex min-h-14 flex-col items-center justify-center gap-0.5 rounded-xl bg-white px-4 py-2 text-[#0b8036] transition-colors active:bg-white/90"
         aria-label={`Jetzt anrufen: ${site.phone}`}
       >
-        <Phone className="size-7 shrink-0" aria-hidden="true" />
-        <span>Jetzt anrufen: {site.phone}</span>
+        <span className="inline-flex items-center gap-2 text-base font-bold">
+          <Phone className="size-6 shrink-0" aria-hidden="true" />
+          Jetzt anrufen:
+        </span>
+        <span className="text-lg font-bold tabular-nums">{site.phone}</span>
       </a>
     </div>
   );

@@ -103,11 +103,15 @@ export function SiteHeader({ currentPath = "/" }: SiteHeaderProps) {
                   href={site.phoneHref}
                   className={cn(
                     buttonVariants({ size: "lg" }),
-                    "btn-call mt-6 bg-[#0b8036] text-white hover:bg-[#096b2d]",
+                    "btn-call mt-6 flex-col bg-[#0b8036] text-white hover:bg-[#096b2d] sm:flex-row",
                   )}
+                  aria-label={`Anrufen: ${site.phone}`}
                 >
-                  <Phone className="size-6" aria-hidden="true" />
-                  Anrufen: {site.phone}
+                  <span className="inline-flex items-center gap-2">
+                    <Phone className="size-6" aria-hidden="true" />
+                    Anrufen:
+                  </span>
+                  <span className="tabular-nums">{site.phone}</span>
                 </a>
               </nav>
             </SheetContent>

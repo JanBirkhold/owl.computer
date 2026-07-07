@@ -43,7 +43,7 @@ export function ServicesSection({ showAll = false, compact = false }: ServicesSe
             Wobei ich Ihnen helfen kann
           </h2>
           <p className="mt-4 text-xl text-muted-foreground">
-            {site.hourlyRate} € pro Stunde — oder wir vereinbaren einen Festpreis vorab.
+            Von Reparatur bis Netzwerk — ich finde die passende Lösung für Sie.
           </p>
         </div>
 
@@ -100,10 +100,11 @@ export function ServicesSection({ showAll = false, compact = false }: ServicesSe
 
         {!showAll && (
           <p className="mt-6 text-center text-xl text-muted-foreground">
-            Nicht sicher, was Sie brauchen?{" "}
+            Erstgespräch unverbindlich —{" "}
             <a href={site.phoneHref} className="content-link text-xl font-bold">
-              Einfach anrufen — ich berate Sie kostenlos.
+              rufen Sie mich gerne an
             </a>
+            .
           </p>
         )}
       </div>

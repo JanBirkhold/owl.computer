@@ -1,8 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
-import { Check, HardDrive, Phone } from "lucide-react";
-import { buttonVariants } from "@/components/ui/button";
-import { dataRecoveryIntro, datenphoenixFeatured, datenphoenixGallery, site } from "@/lib/site";
+import { Check, HardDrive } from "lucide-react";
+import { PhoneCallButton } from "@/components/ui/phone-call-button";
+import { dataRecoveryIntro, datenphoenixFeatured, datenphoenixGallery } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 type GalleryTileProps = {
@@ -83,26 +82,11 @@ export function DataRecoverySection() {
               ))}
             </ul>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
-                href={site.phoneHref}
-                className={cn(
-                  buttonVariants({ size: "lg" }),
-                  "btn-call bg-[#0b8036] hover:bg-[#096b2d]",
-                )}
-              >
-                <Phone className="size-5" aria-hidden="true" />
-                Sofort anrufen
-              </a>
-              <Link
-                href="/kontakt"
-                className={cn(
-                  buttonVariants({ variant: "outline", size: "lg" }),
-                  "min-h-12 border-sky-300/40 bg-white/5 text-lg text-white hover:bg-white/10 hover:text-white",
-                )}
-              >
-                Datenrettung anfragen
-              </Link>
+            <div className="mt-8">
+              <PhoneCallButton
+                label="Sofort anrufen:"
+                className="w-full bg-[#0b8036] hover:bg-[#096b2d] sm:w-auto"
+              />
             </div>
           </div>
 

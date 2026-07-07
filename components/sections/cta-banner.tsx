@@ -1,5 +1,4 @@
-import { Phone } from "lucide-react";
-import { site } from "@/lib/site";
+import { PhoneCallButton } from "@/components/ui/phone-call-button";
 
 export function CtaBanner() {
   return (
@@ -17,13 +16,7 @@ export function CtaBanner() {
           Rufen Sie mich an — ich helfe Ihnen gerne weiter. Kein Fachchinesisch, keine
           Warteschleife.
         </p>
-        <a
-          href={site.phoneHref}
-          className="btn-call mx-auto mt-8 inline-flex bg-white text-[#0b8036] hover:bg-white/95"
-        >
-          <Phone className="size-7" aria-hidden="true" />
-          {site.phone}
-        </a>
+        <PhoneCallButton className="mx-auto mt-8 bg-white text-[#0b8036] hover:bg-white/95" />
         <p className="mt-4 text-lg text-white/90">Mo–Fr, 9–18 Uhr</p>
       </div>
     </section>

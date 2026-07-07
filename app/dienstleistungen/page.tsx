@@ -78,11 +78,7 @@ export default function DienstleistungenPage() {
             <p className="mt-8 text-muted-foreground">
               Webspace-Vermietung mit oder ohne Administration ab{" "}
               <strong className="text-foreground">5 € pro Monat</strong>, je nach Umfang. Aufträge
-              können über Telefon, E-Mail oder das{" "}
-              <Link href="/kontakt" className="text-[#0b8036] hover:underline">
-                Kontaktformular
-              </Link>{" "}
-              erteilt werden.
+              können telefonisch oder per E-Mail erteilt werden.
             </p>
           </div>
         </section>

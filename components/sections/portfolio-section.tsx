@@ -1,9 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ExternalLink } from "lucide-react";
-import { buttonVariants } from "@/components/ui/button";
-import { portfolioProjects, site } from "@/lib/site";
-import { cn } from "@/lib/utils";
+import { PhoneCallButton } from "@/components/ui/phone-call-button";
+import { portfolioProjects } from "@/lib/site";
 
 export function PortfolioSection() {
   return (
@@ -62,22 +60,13 @@ export function PortfolioSection() {
         <div className="mt-10 rounded-2xl border-2 border-[#0b8036]/20 bg-[#0b8036]/5 p-6 text-center sm:p-8">
           <p className="text-xl font-semibold">Sie möchten auch eine Website?</p>
           <p className="mt-2 text-lg text-muted-foreground">
-            Ich erstelle moderne, schnelle Websites nach Ihren Wünschen — ab {site.hourlyRate} €/Stunde
-            oder als Festpreis.
+            Ich erstelle moderne, schnelle Websites nach Ihren Wünschen — Festpreis nach Absprache.
           </p>
-          <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a
-              href={site.phoneHref}
-              className={cn(buttonVariants({ size: "lg" }), "btn-call bg-[#0b8036] hover:bg-[#096b2d]")}
-            >
-              Beratung anfragen
-            </a>
-            <Link
-              href="/kontakt"
-              className={cn(buttonVariants({ variant: "outline", size: "lg" }), "min-h-12 text-lg")}
-            >
-              Nachricht schreiben
-            </Link>
+          <div className="mt-6 flex justify-center">
+            <PhoneCallButton
+              label="Beratung anfragen:"
+              className="bg-[#0b8036] text-white hover:bg-[#096b2d]"
+            />
           </div>
         </div>
       </div>

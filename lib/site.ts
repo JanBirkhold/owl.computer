@@ -57,7 +57,7 @@ export const heroIntro =
 
 export const heroBullets = [
   "Persönliche Beratung — kein Callcenter",
-  "Faire Preise: 50 € pro Stunde",
+  "Erstgespräch unverbindlich — ich berate Sie gern",
   "Service vor Ort in Ihrer Region",
 ] as const;
 

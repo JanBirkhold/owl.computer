@@ -40,40 +40,33 @@ export default function DatenschutzPage() {
           <h2>2. Allgemeine Hinweise</h2>
           <p>
             Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Personenbezogene Daten werden
-            auf dieser Website nur im technisch notwendigen Umfang sowie bei Nutzung des
-            Kontaktformulars verarbeitet.
+            auf dieser Website nur im technisch notwendigen Umfang sowie bei direktem Kontakt per
+            Telefon oder E-Mail verarbeitet.
           </p>
 
-          <h2>3. Hosting</h2>
+          <h2>3. Technische Zugriffsdaten</h2>
           <p>
-            Diese Website wird bei einem externen Dienstleister gehostet. Beim Aufruf der Website
-            werden automatisch Server-Logfiles erfasst (z. B. IP-Adresse, Datum/Uhrzeit,
-            aufgerufene Seite, Browser). Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1
-            lit. f DSGVO (berechtigtes Interesse an stabilem Betrieb).
+            Beim Aufruf dieser Website werden automatisch technische Zugriffsdaten in Logfiles
+            erfasst (z. B. IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browsertyp). Diese
+            Daten werden nicht mit anderen Datenquellen zusammengeführt und dienen der technischen
+            Sicherheit und Stabilität der Website. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO
+            (berechtigtes Interesse an einem sicheren Betrieb).
           </p>
 
-          <h2>4. Kontaktformular</h2>
+          <h2>4. Kontakt per Telefon oder E-Mail</h2>
           <p>
-            Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem
-            Formular (Name, E-Mail, Telefonnummer, Anliegen, Nachricht) zur Bearbeitung Ihrer
-            Anfrage gespeichert und per E-Mail an mich weitergeleitet. Rechtsgrundlage ist Art. 6
-            Abs. 1 lit. b DSGVO (Vertragsanbahnung) bzw. lit. f DSGVO (berechtigtes Interesse an
-            der Beantwortung von Anfragen).
+            Wenn Sie uns telefonisch oder per E-Mail kontaktieren, verarbeiten wir die von Ihnen
+            mitgeteilten Daten (z. B. Name, Telefonnummer, E-Mail-Adresse, Inhalt Ihrer Anfrage)
+            ausschließlich zur Bearbeitung Ihres Anliegens. Rechtsgrundlage ist Art. 6 Abs. 1 lit.
+            b DSGVO (Vertragsanbahnung) bzw. lit. f DSGVO (berechtigtes Interesse an der
+            Beantwortung von Anfragen).
           </p>
           <p>
             Die Daten werden gelöscht, sobald die Anfrage abschließend bearbeitet ist und keine
             gesetzlichen Aufbewahrungspflichten entgegenstehen.
           </p>
 
-          <h2>5. E-Mail-Versand (SMTP)</h2>
-          <p>
-            Kontaktanfragen werden über den Mailserver Ihres Hosting-Anbieters (z. B. Strato oder
-            Hetzner) per SMTP direkt an info@owl.computer weitergeleitet. Die Verarbeitung erfolgt
-            auf Servern in Deutschland bzw. der EU — es werden keine US-Drittanbieter wie Resend
-            oder SendGrid eingesetzt.
-          </p>
-
-          <h2>6. Ihre Rechte</h2>
+          <h2>5. Ihre Rechte</h2>
           <p>Sie haben das Recht auf:</p>
           <ul>
             <li>Auskunft (Art. 15 DSGVO)</li>
@@ -88,7 +81,7 @@ export default function DatenschutzPage() {
             und Informationsfreiheit Nordrhein-Westfalen (LDI NRW).
           </p>
 
-          <h2>7. Bildquellen (Pexels)</h2>
+          <h2>6. Bildquellen (Pexels)</h2>
           <p>
             Stock-Fotos auf dieser Website stammen von{" "}
             <a href="https://www.pexels.com/" target="_blank" rel="noopener noreferrer">
