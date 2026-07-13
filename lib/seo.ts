@@ -31,11 +31,9 @@ export function createMetadata({
     robots: noIndex ? { index: false, follow: false } : { index: true, follow: true },
     icons: {
       icon: [
-        { url: "/logo.svg", type: "image/svg+xml" },
-        { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+        { url: "/favicon.svg", type: "image/svg+xml" },
       ],
-      apple: "/apple-touch-icon.png",
-      shortcut: "/logo.svg",
+      shortcut: "/favicon.svg",
     },
     openGraph: {
       type: "website",
