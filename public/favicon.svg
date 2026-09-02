@@ -6,9 +6,9 @@
    id="Ebene_1"
    x="0px"
    y="0px"
-   width="291.27802"
-   height="320.70486"
-   viewBox="0 0 291.27801 320.70486"
+   width="360"
+   height="360"
+   viewBox="0 0 360 360"
    enable-background="new 0 0 425.2 425.2"
    xml:space="preserve"
    sodipodi:docname="owlcomputer_icon_weissgruen_hellgruen.svg"
@@ -35,6 +35,12 @@
    inkscape:window-y="1067"
    inkscape:window-maximized="1"
    inkscape:current-layer="Ebene_1" />
+<circle
+   cx="180"
+   cy="180"
+   r="180"
+   fill="#000000" />
+<g transform="translate(50 65) scale(0.75)">
 <path
    fill="#a2ce90"
    d="m 193.819,162.4589 c 2.656,0 4.83,-2.173 4.83,-4.83 v -16.228 c 0,-2.657 -2.174,-4.83 -4.83,-4.83 h -3.201 c -2.657,0 -4.83,2.173 -4.83,4.83 v 16.228 c 0,2.657 2.173,4.83 4.83,4.83 z"
@@ -500,5 +506,6 @@
 <g
    id="g250"
    transform="translate(-67.554,-51.585096)">
+</g>
 </g>
 </svg>
