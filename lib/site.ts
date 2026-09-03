@@ -1,7 +1,7 @@
 export const site = {
   name: "OWL Computer",
   owner: "Kasimir Eckhardt",
-  tagline: "IT-Dienstleistungen in Ostwestfalen-Lippe",
+  tagline: "IT-Dienstleistungen",
   description:
     "Persönliche IT-Beratung, Computer-Reparatur, Netzwerkeinrichtung und Webentwicklung in Barntrup, Dörentrup und der Region OWL. Fair, kompetent, direkt erreichbar.",
   url: "https://owl.computer",

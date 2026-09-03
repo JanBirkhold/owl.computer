@@ -15,10 +15,8 @@ export function createMetadata({
   noIndex = false,
 }: PageMeta): Metadata {
   const url = `${site.url}${path}`;
-  const fullTitle =
-    path === "" || path === "/"
-      ? `${site.name} — ${site.tagline}`
-      : `${title} | ${site.name}`;
+  const fullTitle = ["", "/"].includes(path) ?
+    `${site.name} | ${site.tagline}` : `${title} | ${site.name}`;
 
   return {
     title: fullTitle,
